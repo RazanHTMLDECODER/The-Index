@@ -519,6 +519,24 @@ const TASKS = [
   "Say something true that you haven't said out loud in a while.",
   "Stare at your hands for 20 seconds.",
   "Type every vowel of the alphabet in order. Lowercase."
+  "Stub your toe onto a table three times."
+  "Drive to the nearest McDonald's and order something that's on the menu. Then leave."
+  "Curse the person that's next to you and stay silent."
+  "Do nothing for 10 minutes."
+  "Do a backflip on a chair."
+  "Slap yourself 10 times on the cheeks."
+  "Recite the sentence 'Glory to Hermes' for 2 minutes."
+  "Call your friend and don't say anything."
+  "Write a diary about your family."
+  "Delete one app from your available device."
+  "Scream as loud as you can."
+  "Poke your friend's back and act confused."
+  "Lie on the floor for 5 minutes."
+  "Order a pizza and ask them to replace the dough with a watermelon."
+  "Write your favorite celebrity on a piece of paper, repeat until 10."
+  "Rewatch your previous film/movie/anime."
+  "Shout 'I LOVE HERMES' out loud in public."
+  "Call your friend cute and leave the room."
 ];
 
 const HERMES_QUIPS = [
@@ -692,7 +710,7 @@ function issueTask(isFirst) {
 function markDone() {
   document.getElementById('btn-done').classList.remove('visible');
   playCompleteSound();
-  shuffle('task-text', 'COMPLETE', 700, () => {
+  shuffle('task-text', 'CLEAR_', 700, () => {
     setTimeout(() => {
       issueTask(false);
     }, 1400);
